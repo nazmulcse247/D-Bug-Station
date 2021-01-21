@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SplashActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E7E7E7">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_cover_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="1"
+            android:orientation="horizontal"
+            />
+
+
+        <ImageView
+            android:id="@+id/main_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cover_img"
+            app:layout_constraintBottom_toBottomOf="@+id/gl_cover_iv"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="NXT"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_next"
+            app:layout_constraintStart_toStartOf="@id/tv_next"
+            android:text="LVL"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/tv_next"
+            android:layout_marginStart="30dp"/>
+
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tatto Studio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="30sp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
